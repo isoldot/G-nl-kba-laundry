@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Günlükbaşı Laundry | Fethiye Çamaşırhane</title>
+  <meta name="description" content="Günlükbaşı Laundry Fethiye/Muğla'da ev çamaşırları, kuru temizleme, otel çamaşırları, perde temizleme ve ütü hizmetleri sunar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #0d6efd;
+      --light-blue: #e9f2ff;
+      --white: #ffffff;
+      --dark: #1f2937;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--blue), #4fa3ff);
+      color: white;
+      padding: 1rem 1.5rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+    .hero {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1.2rem;
+      background: white;
+      color: var(--blue);
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    section {
+      padding: 3rem 1rem;
+    }
+    .services {
+      background: var(--light-blue);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: var(--blue);
+    }
+    .contact {
+      background: var(--blue);
+      color: white;
+    }
+    .contact a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer {
+      background: #0b1f3a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+    }
+    iframe {
+      width: 100%;
+      border: 0;
+      border-radius: 12px;
+      height: 320px;
+    }
+    @media (min-width: 768px) {
+      .hero h1 { font-size: 2.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <strong>Günlükbaşı Laundry</strong>
+      <div>
+        <a href="#services">Hizmetler</a>
+        <a href="https://www.google.com/search?sca_esv=96130d3cf859ad88&sxsrf=ANbL-n6evCJltXwIZs5Gb1PQbqB9FX3xZw:1768128415028&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOY86aO38gBOA0GaPnYyPlGwrqyFh3cuZ6CH3qtOHLKSo8OO7gGW5kwVS0-yyapYnr3TtywmFocBJvmr3iCJDKPrVETRZnlHA821ti6r-A29mLlfASL8uU82UDNxLJhrduOP9LwE%3D&q=G%C3%BCnl%C3%BCkba%C5%9F%C4%B1+Laundry+Cama%C5%9Firhane+%C3%9Ct%C3%BC+Evi+Yorumlar&sa=X&ved=2ahUKEwiZleDQp4OSAxX-AtsEHaTCFR4Q0bkNegQIIRAD&biw=1920&bih=991&dpr=1&aic=0" target="_blank">Yorumlar</a>
+        <a href="#contact">İletişim</a>
+        <a href="https://instagram.com/gunlukbasi_laundry" target="_blank" style="margin-left:1rem;">Instagram</a>
+        <a href="https://www.facebook.com/search/top?q=G%C3%BCnl%C3%BCkba%C5%9F%C4%B1%20Laundry" target="_blank" style="margin-left:0.5rem;">Facebook</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <h1>Fethiye'nin Güvenilir Çamaşırhanesi</h1>
+    <p>Ev çamaşırları, kuru temizleme, otel çamaşırları, perde temizleme ve profesyonel ütü hizmetleri.</p>
+    <a class="btn" href="https://wa.me/905415696348" target="_blank">WhatsApp'tan Hemen Yazın</a>
+  </div>
+</header>
+
+<section id="services" class="services">
+  <div class="container">
+    <h2>Hizmetlerimiz</h2>
+    <div class="grid">
+      <div class="card"><h3>Ev Çamaşırları</h3><p>Günlük kıyafetleriniz hijyenik ve özenli şekilde yıkanır.</p></div>
+      <div class="card"><h3>Kuru Temizleme</h3><p>Hassas ve özel kumaşlar için profesyonel çözümler.</p></div>
+      <div class="card"><h3>Otel Çamaşırları</h3><p>Otel ve pansiyonlara hızlı, toplu ve düzenli hizmet.</p></div>
+      <div class="card"><h3>Perde Temizleme</h3><p>Stor, tül ve fon perdeleriniz zarar görmeden temizlenir.</p></div>
+      <div class="card"><h3>Ütü Hizmeti</h3><p>Kusursuz ve düzenli ütü hizmeti.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="container">
+    <h2>⭐ Müşteri Yorumlarımız</h2>
+    <p>Google’da paylaşılan bazı 5 yıldızlı müşteri yorumlarımız</p>
+
+    <div class="grid">
+      <div class="card">
+        <strong>★★★★★</strong>
+        <p><em>“Çok hızlı ve tertipli hizmet. Gömleklerim tertemiz oldu.”</em></p>
+        <small>— Google Yorumu</small>
+        <img src="https://via.placeholder.com/300x200?text=Yorum+Resmi" style="width:100%;margin-top:0.8rem;border-radius:10px;" />
+      </div>
+      <div class="card">
+        <strong>★★★★★</strong>
+        <p><em>“Otel çamaşırlarımız için düzenli çalışıyoruz, çok memnunuz.”</em></p>
+        <small>— Google Yorumu</small>
+        <img src="https://via.placeholder.com/300x200?text=Yorum+Resmi" style="width:100%;margin-top:0.8rem;border-radius:10px;" />
+      </div>
+      <div class="card">
+        <strong>★★★★★</strong>
+        <p><em>“Perdelerim ilk günkü gibi teslim edildi, teşekkürler.”</em></p>
+        <small>— Google Yorumu</small>
+        <img src="https://via.placeholder.com/300x200?text=Yorum+Resmi" style="width:100%;margin-top:0.8rem;border-radius:10px;" />
+      </div>
+    </div>
+
+    <div style="margin:2rem 0; text-align:center;">
+      <a href="https://www.google.com/search?sca_esv=96130d3cf859ad88&sxsrf=ANbL-n6evCJltXwIZs5Gb1PQbqB9FX3xZw:1768128415028&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOY86aO38gBOA0GaPnYyPlGwrqyFh3cuZ6CH3qtOHLKSo8OO7gGW5kwVS0-yyapYnr3TtywmFocBJvmr3iCJDKPrVETRZnlHA821ti6r-A29mLlfASL8uU82UDNxLJhrduOP9LwE%3D&q=G%C3%BCnl%C3%BCkba%C5%9F%C4%B1+Laundry+Cama%C5%9Firhane+%C3%9Ct%C3%BC+Evi+Yorumlar" target="_blank" style="display:inline-block;background:#0d6efd;color:#fff;padding:0.9rem 1.6rem;border-radius:10px;font-weight:600;text-decoration:none;">
+        ⭐ Google’da Tüm Yorumları Gör / Yorum Yap
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="services">
+  <div class="container">
+    <h2>🧺 Çamaşırhanemizden Gerçek Görüntüler</h2>
+    <p>Günlükbaşı Laundry’de yapılan gerçek yıkama, ütüleme ve paketleme işlemleri</p>
+
+    <div class="grid">
+      <div class="card">
+        <img src="WhatsApp Image 2026-01-11 at 14.10.40.jpeg" alt="Paketlenmiş çamaşırlar" style="width:100%;border-radius:12px;" />
+        <p><strong>Özenle Paketlenmiş Çamaşırlar</strong></p>
+      </div>
+      <div class="card">
+        <img src="WhatsApp Image 2026-01-11 at 14.10.40 (1).jpeg" alt="Teslime hazır çamaşırlar" style="width:100%;border-radius:12px;" />
+        <p><strong>Teslime Hazır Ürünler</strong></p>
+      </div>
+      <div class="card">
+        <img src="WhatsApp Image 2026-01-11 at 14.05.03 (1).jpeg" alt="Endüstriyel makineler" style="width:100%;border-radius:12px;" />
+        <p><strong>Endüstriyel Yıkama Alanı</strong></p>
+      </div>
+      <div class="card">
+        <img src="WhatsApp Image 2026-01-11 at 14.09.14.jpeg" alt="Ütü hizmeti" style="width:100%;border-radius:12px;" />
+        <p><strong>Profesyonel Ütü Hizmeti</strong></p>
+      </div>
+      <div class="card">
+        <img src="ChatGPT Image 11 Oca 2026 14_06_35.png" alt="Çamaşırhane içi" style="width:100%;border-radius:12px;" />
+        <p><strong>Çalışma Alanımız</strong></p>
+      </div>
+    </div>
+  </div>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>İletişim & Konum</h2>
+    <p><strong>Adres:</strong> Foça Mah. Selim Günday Cad. No:38/B, Fethiye / Muğla</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/905415696348" target="_blank">+90 541 569 63 48</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/gunlukbasi_laundry" target="_blank">@gunlukbasi_laundry</a></p>
+    <p><strong>Facebook:</strong> Günlükbaşı Laundry İroning</p>
+    <br />
+    <iframe src="https://www.google.com/maps?q=Foça%20Mahallesi%20Selim%20Günday%20Caddesi%2038/B%20Fethiye&output=embed"></iframe>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Günlükbaşı Laundry • Tüm Hakları Saklıdır</p>
+</footer>
+
+</body>
+</html>
